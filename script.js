@@ -24,7 +24,7 @@ async function checkWeather(city) {
     // if (data.message != "Nothing to geocode" || data.message != "city not found") {
         else {
             let data = await response.json();
-            console.log(data);
+            console.log(data.weather[0].main);
             document.querySelector(".city").innerHTML = data.name
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C"
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%"
