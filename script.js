@@ -31,25 +31,25 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerHTML = Math.round(data.wind.speed) + " km/h"
 
         if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "Images/clouds.png"
+            weatherIcon.src = "blob/main/Images/clouds.png"
         }
         else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "Images/clear.png"
+            weatherIcon.src = "blob/main/Images/clear.png"
         }
         else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "Images/rain.png"
+            weatherIcon.src = "blob/main/Images/rain.png"
         }
         else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "Images/drizzle.png"
+            weatherIcon.src = "blob/main/Images/drizzle.png"
         }
         else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "Images/mist.png"
+            weatherIcon.src = "blob/main/Images/mist.png"
         }
         else if (data.weather[0].main == "Haze") {
-            weatherIcon.src = "Images/haze.png"
+            weatherIcon.src = "blob/main/Images/haze.png"
         }
         else if (data.weather[0].main == "Smoke") {
-            weatherIcon.src = "Images/haze.png"
+            weatherIcon.src = "blob/main/Images/haze.png"
         }
 
         document.querySelector(".errors .propername").style.display = "none"
